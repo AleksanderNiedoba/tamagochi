@@ -49,7 +49,7 @@
 	"Needs_container.h"
 	"Game.h"
 
-1465579743 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\need.h
+1465582269 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\need.h
 	<string>
 
 1465508582 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\food_need.h
@@ -60,7 +60,7 @@
 	<vector>
 	"Need.h"
 
-1465581717 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\needs_container.h
+1465582158 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\needs_container.h
 	<vector>
 
 1465508582 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\entertainment_need.h
@@ -76,7 +76,7 @@
 	"Need.h"
 	<iostream>
 
-1465581701 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\needs_container.cpp
+1465582158 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\needs_container.cpp
 	"Needs_container.h"
 	"Need.h"
 	<iostream>

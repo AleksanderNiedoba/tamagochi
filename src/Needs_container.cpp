@@ -31,3 +31,13 @@ void Needs_container::update_needs()
         need.change_need_lvl(NEED_LVL_CHANGE);
     }
 }
+
+double Needs_container::get_happiness_lvl()
+{
+    double happiness_sum=0;
+    for(Need &need: needs)
+    {
+        happiness_sum+= need.get_need_lvl()*need.get_happiness_weight();
+    }
+    return happiness_sum;
+}

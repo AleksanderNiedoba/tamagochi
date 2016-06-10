@@ -26,12 +26,12 @@ void Need::to_range(double &need_lvl)
 }
 
 
-double Need::get_need_lvl()
+double Need::get_need_lvl() const
 {
     return need_lvl;
 }
 
-bool Need::is_satisfied()
+bool Need::is_satisfied() const
 {
 
     return need_lvl >= SATISFY_TRESHHOLD;
@@ -43,8 +43,13 @@ void Need::change_need_lvl(double amount)
     to_range(need_lvl);
 }
 
-std::string Need::get_type()
+const std::string Need::get_type() const
 {
     return type;
+}
+
+const double Need::get_happiness_weight() const
+{
+    return happiness_weight;
 }
 

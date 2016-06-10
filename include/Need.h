@@ -8,9 +8,10 @@ class Need
 public:
     Need(std::string, double);
     virtual ~Need();
-    bool is_satisfied();
-    std::string get_type();
-    double get_need_lvl();
+    bool is_satisfied() const;
+    const std::string get_type() const;
+    double get_need_lvl() const;
+    const double get_happiness_weight() const;
     void change_need_lvl(double amount);
 protected:
     double need_lvl=100;

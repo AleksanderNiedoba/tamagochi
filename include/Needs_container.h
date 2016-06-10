@@ -9,6 +9,7 @@ class Need;
 class Needs_container
 {
     public:
+        double get_happiness_lvl();
         Needs_container();
         virtual ~Needs_container();
     void add_need(Need need);
