@@ -1,10 +1,13 @@
 #include <iostream>
 #include <assert.h>
+
 #include "Need.h"
 #include "Food_need.h"
 #include "Tamagochi.h"
 #include "Needs_container.h"
 #include "Entertainment_need.h"
+#include "Game.h"
+
 
 using namespace std;
 
@@ -45,5 +48,7 @@ int main()
     Tamagochi tamagochi;
     Needs_container nc1;
     asserts(tamagochi, nc1);
+    Game game;
+    game.run();
 
 }
