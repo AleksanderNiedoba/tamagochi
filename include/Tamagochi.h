@@ -10,8 +10,9 @@ class Tamagochi
         Tamagochi();
         virtual ~Tamagochi();
     bool is_dead();
-        set_mood();
+        void set_mood(const double);
         void check_needs(std::vector<Need> needs);
+        const std::string get_mood() const;
 
     protected:
 

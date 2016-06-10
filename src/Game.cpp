@@ -36,11 +36,12 @@ bool Game::endGame()
 
 void Game::update()
 {
-    //update_needs
-    vector<Need> needs = needs_container.get_needs();
+   needs_container.update_needs();
+   double happiness_lvl = needs_container.get_happiness_lvl();
+   tamagochi.set_mood(happiness_lvl);
 
-    needs_container.update_needs();
-
-
+   vector<Need> needs = needs_container.get_needs();
    tamagochi.check_needs(needs);
+
+   cout<<tamagochi.get_mood()<<endl;
 }

@@ -34,3 +34,36 @@ bool Tamagochi::is_dead()
     //when food is zero or health is zero
     return false;
 }
+
+const std::string Tamagochi::get_mood() const
+{
+    return mood;
+}
+
+void Tamagochi::set_mood(const double happiness_lvl)
+{
+    if( happiness_lvl >= 95)
+    {
+        mood = "Wonderful";
+    }
+    else if( happiness_lvl >= 75)
+    {
+        mood = "life is beautiful";
+    }
+    else if( happiness_lvl >= 55)
+    {
+        mood = "I'm happy";
+    }
+     else if( happiness_lvl >= 35)
+    {
+        mood = "life sucks";
+    }
+     else if( happiness_lvl >= 15)
+    {
+        mood = "Don't forget about me";
+    }
+    else
+    {
+        mood = "I'm dying";
+    }
+}

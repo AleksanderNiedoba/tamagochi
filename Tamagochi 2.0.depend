@@ -55,12 +55,12 @@
 1465508582 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\food_need.h
 	<Need.h>
 
-1465580451 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\tamagochi.h
+1465582840 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\tamagochi.h
 	<string>
 	<vector>
 	"Need.h"
 
-1465582158 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\needs_container.h
+1465582888 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\needs_container.h
 	<vector>
 
 1465508582 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\entertainment_need.h
@@ -72,7 +72,7 @@
 1465508582 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\food_need.cpp
 	"Food_need.h"
 
-1465579743 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\need.cpp
+1465582269 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\need.cpp
 	"Need.h"
 	<iostream>
 
@@ -81,12 +81,12 @@
 	"Need.h"
 	<iostream>
 
-1465580509 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\tamagochi.cpp
+1465582840 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\tamagochi.cpp
 	"Tamagochi.h"
 	<iostream>
 	<string>
 
-1465581679 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\game.cpp
+1465582840 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\game.cpp
 	<iostream>
 	<string>
 	"Need.h"
