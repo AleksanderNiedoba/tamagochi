@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1465508706 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamgochi 2.0\tamagochi 2.0\main.cpp
+	<iostream>
+	<assert.h>
+	"Need.h"
+	"Food_need.h"
+	"Tamagochi.h"
+	"Needs_container.h"
+	"Entertainment_need.h"
+
+1465508582 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamgochi 2.0\tamagochi 2.0\src\need.cpp
+	"Need.h"
+
+1465508582 c:\users\olek\desktop\programowanie ii\projekt i sem\tamgochi 2.0\tamagochi 2.0\include\need.h
+	<string>
+
+1465508582 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamgochi 2.0\tamagochi 2.0\src\food_need.cpp
+	"Food_need.h"
+
+1465508582 c:\users\olek\desktop\programowanie ii\projekt i sem\tamgochi 2.0\tamagochi 2.0\include\food_need.h
+	<Need.h>
+
+1465506737 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamgochi 2.0\tamagochi 2.0\src\needs_container.cpp
+	"Needs_container.h"
+
+1465506737 c:\users\olek\desktop\programowanie ii\projekt i sem\tamgochi 2.0\tamagochi 2.0\include\needs_container.h
+	<vector>
+
+1465505768 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamgochi 2.0\tamagochi 2.0\src\tamagochi.cpp
+	"Tamagochi.h"
+	<iostream>
+
+1465505752 c:\users\olek\desktop\programowanie ii\projekt i sem\tamgochi 2.0\tamagochi 2.0\include\tamagochi.h
+	<string>
+	<vector>
+	"Need.h"
+
+1465508582 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamgochi 2.0\tamagochi 2.0\src\entertainment_need.cpp
+	"Entertainment_need.h"
+
+1465508582 c:\users\olek\desktop\programowanie ii\projekt i sem\tamgochi 2.0\tamagochi 2.0\include\entertainment_need.h
+	<Need.h>
+
