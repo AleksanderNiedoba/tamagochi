@@ -14,9 +14,9 @@ Need::~Need()
 
 void Need::to_range(int need_lvl)
 {
-    if(need_lvl>100)
+    if(need_lvl>1000)
     {
-        need_lvl=100;
+        need_lvl=1000;
     }
     if(need_lvl<0)
     {
