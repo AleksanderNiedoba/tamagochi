@@ -12,11 +12,11 @@ Need::~Need()
 }
 
 
-void Need::to_range(int need_lvl)
+void Need::to_range(double &need_lvl)
 {
-    if(need_lvl>1000)
+    if(need_lvl>100)
     {
-        need_lvl=1000;
+        need_lvl=100;
     }
     if(need_lvl<0)
     {
@@ -25,7 +25,7 @@ void Need::to_range(int need_lvl)
 }
 
 
-int Need::get_need_lvl()
+double Need::get_need_lvl()
 {
     return need_lvl;
 }
@@ -36,7 +36,7 @@ bool Need::is_satisfied()
     return need_lvl >= SATISFY_TRESHHOLD;
 }
 
-void Need::change_need_lvl(int amount)
+void Need::change_need_lvl(double amount)
 {
     need_lvl+=amount;
     to_range(need_lvl);
