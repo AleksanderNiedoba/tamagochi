@@ -6,18 +6,19 @@
 class Need
 {
 public:
-    Need(std::string);
+    Need(std::string, double);
     virtual ~Need();
     bool is_satisfied();
     std::string get_type();
-    int get_need_lvl();
-    void change_need_lvl(int amount);
+    double get_need_lvl();
+    void change_need_lvl(double amount);
 protected:
-    int need_lvl=100;
-    void to_range(int);
+    double need_lvl=100;
+    void to_range(double&);
 private:
     const int SATISFY_TRESHHOLD = 75;
     std::string type;
+    double happiness_weight;
 
 };
 

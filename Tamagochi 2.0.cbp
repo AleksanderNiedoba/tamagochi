@@ -5,6 +5,7 @@
 		<Option title="Tamagochi 2.0" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
+		<Option virtualFolders="src\;" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/Tamagochi 2" prefix_auto="1" extension_auto="1" />
@@ -32,18 +33,19 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add option="-std=c++11" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/Entertainment_need.h" />
-		<Unit filename="include/Food_need.h" />
 		<Unit filename="include/Game.h" />
 		<Unit filename="include/Need.h" />
+		<Unit filename="include/Need_asserts.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
 		<Unit filename="include/Needs_container.h" />
 		<Unit filename="include/Tamagochi.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/Entertainment_need.cpp" />
-		<Unit filename="src/Food_need.cpp" />
 		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/GameLoop.cpp" />
 		<Unit filename="src/Need.cpp" />
 		<Unit filename="src/Needs_container.cpp" />
 		<Unit filename="src/Tamagochi.cpp" />

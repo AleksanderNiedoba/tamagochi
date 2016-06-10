@@ -1,9 +1,10 @@
 #include "Need.h"
+#include <iostream>
 
-
-Need::Need(std::string _type)
+Need::Need(std::string need_type, double need_happiness_weight)
 {
-    type = _type;
+    type = need_type;
+    happiness_weight = need_happiness_weight;
 }
 
 Need::~Need()

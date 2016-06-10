@@ -1,5 +1,6 @@
 #include "Tamagochi.h"
 #include <iostream>
+#include <string>
 
 Tamagochi::Tamagochi()
 {
@@ -11,20 +12,21 @@ Tamagochi::~Tamagochi()
     //dtor
 }
 
-void Tamagochi::check_needs(std::vector<Need*> needs)
+void Tamagochi::check_needs(std::vector<Need> needs)
 {
-    for(std::vector<Need*>::iterator it = needs.begin(); it != needs.end(); ++it)
+    for(auto need: needs)
     {
-        if( !(*(*it)).is_satisfied() )
+        if( !need.is_satisfied() )
         {
-            demand((*it));
+            demand(need);
         }
     }
 }
 
-void Tamagochi::demand(Need* need)
+void Tamagochi::demand(Need need)
 {
-    std::cout<<(*need).get_type()<<" is not satisfied"<<std::endl;
+    //std::cout<<(*need).get_type()<<" is not satisfied"<<std::endl;
+    std::cout<<" is not satisfied"<<std::endl;
 }
 
 bool Tamagochi::is_dead()

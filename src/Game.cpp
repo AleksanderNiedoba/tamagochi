@@ -1,10 +1,12 @@
-
+#include <iostream>
+#include <string>
 #include "Need.h"
-//#include "Need_asserts.cpp"
 #include "Tamagochi.h"
 #include "Needs_container.h"
 
 #include "Game.h"
+
+using namespace std;
 
 Game::Game()
 {
@@ -20,10 +22,10 @@ Game::~Game()
 
 bool Game::init()
 {
-    Need food_need("food");
-    Need entertainment_need("entertainment");
-    needs_container.add_need(&food_need);
-    needs_container.add_need(&entertainment_need);
+    Need food_need("food", 12);
+    Need entertainment_need("entertainment", 8);
+    needs_container.add_need(food_need);
+    needs_container.add_need(entertainment_need);
     return true;
 }
 
@@ -34,5 +36,11 @@ bool Game::endGame()
 
 void Game::update()
 {
+    //update_needs
+    vector<Need> needs = needs_container.get_needs();
 
+    needs_container.update_needs();
+
+
+   tamagochi.check_needs(needs);
 }

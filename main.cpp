@@ -10,9 +10,10 @@ using namespace std;
 
 void NeedAsserts()
 {
-    Need food_need("food");
+    Need food_need("food", 12);
+    Need* ptr = &food_need;
+    assert((*ptr).get_type() == "food");
     assert(food_need.get_type()=="food");
-
 
     assert(food_need.is_satisfied());
     food_need.change_need_lvl(-40.0);
@@ -23,8 +24,6 @@ void NeedAsserts()
 
 int main()
 {
-
-
     NeedAsserts();
     Game game;
     game.init();

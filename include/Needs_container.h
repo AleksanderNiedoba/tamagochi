@@ -11,12 +11,14 @@ class Needs_container
     public:
         Needs_container();
         virtual ~Needs_container();
-    void add_need(Need* need);
-    vector<Need*> get_needs();
+    void add_need(Need need);
+    vector<Need>& get_needs();
+    void update_needs();
     protected:
 
     private:
-      vector<Need*> needs;
+        const double NEED_LVL_CHANGE = -0.1;
+      vector<Need> needs;
 
 };
 
