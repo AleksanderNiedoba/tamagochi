@@ -8,12 +8,15 @@ class Game
         bool init();
         void run();
         void draw();
+        void update();
         Game();
         virtual ~Game();
 
     protected:
 
     private:
+        Needs_container needs_container;
+        Tamagochi tamagochi;
         bool endGame();
 };
 

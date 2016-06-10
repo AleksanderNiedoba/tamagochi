@@ -1,10 +1,10 @@
-#include "Game.h"
+
 #include "Need.h"
-#include "Food_need.h"
+//#include "Need_asserts.cpp"
 #include "Tamagochi.h"
 #include "Needs_container.h"
-#include "Entertainment_need.h"
 
+#include "Game.h"
 
 Game::Game()
 {
@@ -20,10 +20,19 @@ Game::~Game()
 
 bool Game::init()
 {
+    Need food_need("food");
+    Need entertainment_need("entertainment");
+    needs_container.add_need(&food_need);
+    needs_container.add_need(&entertainment_need);
     return true;
 }
 
 bool Game::endGame()
 {
     return false;
+}
+
+void Game::update()
+{
+
 }

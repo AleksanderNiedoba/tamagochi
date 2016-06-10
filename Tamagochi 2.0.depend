@@ -41,17 +41,15 @@
 1465508582 c:\users\olek\desktop\programowanie ii\projekt i sem\tamgochi 2.0\tamagochi 2.0\include\entertainment_need.h
 	<Need.h>
 
-1465569649 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\main.cpp
+1465576335 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\main.cpp
 	<iostream>
 	<assert.h>
 	"Need.h"
-	"Food_need.h"
 	"Tamagochi.h"
 	"Needs_container.h"
-	"Entertainment_need.h"
 	"Game.h"
 
-1465508582 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\need.h
+1465576088 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\need.h
 	<string>
 
 1465508582 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\food_need.h
@@ -74,7 +72,7 @@
 1465508582 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\food_need.cpp
 	"Food_need.h"
 
-1465508582 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\need.cpp
+1465576088 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\need.cpp
 	"Need.h"
 
 1465506737 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\needs_container.cpp
@@ -84,23 +82,24 @@
 	"Tamagochi.h"
 	<iostream>
 
-1465569444 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\game.cpp
+1465575236 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\game.cpp
+	"Need.h"
+	"Tamagochi.h"
+	"Needs_container.h"
 	"Game.h"
-	"Need.h"
-	"Food_need.h"
-	"Tamagochi.h"
-	"Needs_container.h"
-	"Entertainment_need.h"
 
-1465567429 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\game.h
+1465573165 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\game.h
 
-1465569607 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\gameloop.cpp
+1465575497 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\gameloop.cpp
 	<iostream>
+	<assert.h>
 	"Need.h"
-	"Food_need.h"
 	"Tamagochi.h"
 	"Needs_container.h"
-	"Entertainment_need.h"
 	"Game.h"
 	<chrono>
+
+1465576320 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\need_asserts.cpp
+	"Need.h"
+	"assert.h"
 

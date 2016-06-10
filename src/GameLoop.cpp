@@ -1,11 +1,11 @@
 #include <iostream>
+#include <assert.h>
 #include "Need.h"
-#include "Food_need.h"
 #include "Tamagochi.h"
 #include "Needs_container.h"
-#include "Entertainment_need.h"
 #include "Game.h"
 #include <chrono>
+
 //game loop from https://gist.github.com/mariobadr/673bbd5545242fcf9482
 //on MIT license
 
@@ -14,14 +14,6 @@ void Game::run()
 {
 
     constexpr std::chrono::nanoseconds timestep(16000000);
-    //Game::init here for now
-    Tamagochi tamagochi;
-    Needs_container needC;
-    Food_need food_need;
-    Entertainment_need entertainment_need;
-    needC.add_need(&food_need);
-    needC.add_need(&entertainment_need);
-    //end of init
 
 
         using clock = std::chrono::high_resolution_clock;
@@ -43,7 +35,7 @@ void Game::run()
                 lag -= timestep;
 
                 //previous_state = current_state;
-                //update(); // update at a fixed rate each time
+                update(); // update at a fixed rate each time
             }
 
             // calculate how close or far we are from the next timestep

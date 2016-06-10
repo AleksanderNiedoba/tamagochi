@@ -1,9 +1,9 @@
 #include "Need.h"
 
 
-Need::Need()
+Need::Need(std::string _type)
 {
-    //ctor
+    type = _type;
 }
 
 Need::~Need()
@@ -33,7 +33,7 @@ int Need::get_need_lvl()
 bool Need::is_satisfied()
 {
 
-    return need_lvl < SATISFY_TRESHHOLD;
+    return need_lvl >= SATISFY_TRESHHOLD;
 }
 
 void Need::change_need_lvl(int amount)
@@ -42,4 +42,8 @@ void Need::change_need_lvl(int amount)
     to_range(need_lvl);
 }
 
+std::string Need::get_type()
+{
+    return type;
+}
 
