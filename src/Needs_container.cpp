@@ -41,3 +41,14 @@ double Needs_container::get_happiness_lvl()
     }
     return happiness_sum;
 }
+
+Need Needs_container::getNeedOfType(string type)
+{
+    for(auto &need: needs)
+    {
+        if (need.get_type()==type)
+        {
+            return need;
+        }
+    }
+}

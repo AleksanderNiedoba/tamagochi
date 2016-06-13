@@ -1,6 +1,6 @@
 #ifndef GAME_H
 #define GAME_H
-
+#include "ItemContainer.h"
 
 class Game
 {
@@ -16,6 +16,7 @@ class Game
 
     private:
         Needs_container needs_container;
+        ItemContainer itemContainer;
         Tamagochi tamagochi;
         bool endGame();
 };

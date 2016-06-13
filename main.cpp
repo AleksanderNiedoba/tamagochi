@@ -4,11 +4,55 @@
 #include "Tamagochi.h"
 #include "Needs_container.h"
 #include "Game.h"
+#include "ItemContainer.h"
+#include "asserts/itemAsserts.cpp"
 
 
 using namespace std;
 
-void NeedAsserts()
+void assertAddingItems()
+{
+    Item jablko("jablko",5,30);
+    ItemContainer itemContainer;
+    itemContainer.addItem(jablko);
+    vector<Item> items = itemContainer.getItems();
+    assert(!items.empty());
+}
+
+void itemAsserts()
+{
+    //symulacja zjadania jablka
+    //stworz jablko
+    assertAddingItems();
+    Item jablko("jablko",5,30);
+    ItemContainer itemContainer;
+    itemContainer.addItem(jablko);
+    //stworz potrzebe jedzenia
+    Need food_need("food", 12);
+    //zjedz i sprawdz >100
+    vector<Item> itemCont = itemContainer.getItems();
+
+
+    itemContainer.useItem("jablko", food_need);
+    cout<<"TY HUJU"<<endl;
+    assert(food_need.get_need_lvl()<=100);
+    //sprawdz, czy japko zostalo usuniete z itemcontainer
+
+    for(auto &item: itemCont)
+    {
+        assert(item.getName() != "jablko");
+    }
+    //odejmij 50
+    food_need.change_need_lvl(-50);
+    // zjedz jablko
+    Item jablko1("jablko",5,30);
+    itemContainer.addItem(jablko);
+    itemContainer.useItem("jablko", food_need);
+    // sprawdz czy  need_lvl = 50+satisfyValue
+    assert(food_need.get_need_lvl()==50+5);
+}
+
+void needAsserts()
 {
     Need food_need("food", 12);
     Need* ptr = &food_need;
@@ -20,11 +64,15 @@ void NeedAsserts()
     assert(food_need.get_need_lvl()==60.0);
     assert(!food_need.is_satisfied());
 }
-
+void asserts()
+{
+    needAsserts();
+    itemAsserts();
+}
 
 int main()
 {
-    NeedAsserts();
+    asserts();
     Game game;
     game.init();
     game.run();
