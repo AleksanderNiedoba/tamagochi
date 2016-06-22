@@ -3,13 +3,14 @@
 #include <windows.h>
 #include <vector>
 #include <string>
+#include <Need.h>
 
 class RenderBars
 {
     public:
         RenderBars();
         virtual ~RenderBars();
-        void renderAll(std::vector<std::string> barsNumber);
+        void renderAll(std::vector<Need> needs);
 
     protected:
 
@@ -28,7 +29,8 @@ class RenderBars
 
 
         void drawBar(char x, char y, const int colorNumber, int coloredCharsNum);
-        void renderName(char x, char y, std::string name);
+        void renderName(char x, char y, std::string name, const int need_lvl);
+        const int computeColoredCharsNum(const int need_lvl, const int MAX_NEED_LVL);
 
 };
 

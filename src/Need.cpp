@@ -3,6 +3,7 @@
 
 Need::Need(std::string need_type, double need_happiness_weight)
 {
+    need_lvl = MAX_NEED_LVL;
     type = need_type;
     happiness_weight = need_happiness_weight;
 }
@@ -33,8 +34,7 @@ double Need::get_need_lvl() const
 
 bool Need::is_satisfied() const
 {
-
-    return need_lvl >= SATISFY_TRESHHOLD;
+    return need_lvl >= SATISFY_TRESHHOLD; //zmien to porownanie
 }
 
 void Need::change_need_lvl(double amount)
@@ -51,5 +51,10 @@ const std::string Need::get_type() const
 const double Need::get_happiness_weight() const
 {
     return happiness_weight;
+}
+
+const int Need::getMaxNeedLvl()
+{
+    return MAX_NEED_LVL;
 }
 

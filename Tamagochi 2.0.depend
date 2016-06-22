@@ -41,7 +41,7 @@
 1465508582 c:\users\olek\desktop\programowanie ii\projekt i sem\tamgochi 2.0\tamagochi 2.0\include\entertainment_need.h
 	<Need.h>
 
-1466614228 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\main.cpp
+1466619796 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\main.cpp
 	<iostream>
 	<assert.h>
 	"Need.h"
@@ -52,7 +52,7 @@
 	"asserts/itemAsserts.cpp"
 	"RenderBars.h"
 
-1466593420 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\need.h
+1466619930 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\need.h
 	<string>
 
 1465508582 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\food_need.h
@@ -63,7 +63,7 @@
 	<vector>
 	"Need.h"
 
-1466616764 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\needs_container.h
+1466620632 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\needs_container.h
 	<vector>
 	<string>
 
@@ -76,7 +76,7 @@
 1465508582 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\food_need.cpp
 	"Food_need.h"
 
-1466593420 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\need.cpp
+1466619953 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\need.cpp
 	"Need.h"
 	<iostream>
 
@@ -90,7 +90,7 @@
 	<iostream>
 	<string>
 
-1466616839 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\game.cpp
+1466619495 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\game.cpp
 	<iostream>
 	<string>
 	<windows.h>
@@ -161,7 +161,7 @@
 	<string>
 	"Tamagochi.h"
 
-1466612034 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\draw.cpp
+1466619495 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\draw.cpp
 	"Draw.h"
 	<windows.h>
 	<string>
@@ -173,12 +173,13 @@
 	<fstream>
 	<string>
 
-1466617737 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\renderbars.h
+1466620356 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\renderbars.h
 	<windows.h>
 	<vector>
 	<string>
+	<Need.h>
 
-1466615275 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\renderbars.cpp
+1466620595 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\renderbars.cpp
 	"RenderBars.h"
 	<iostream>
 

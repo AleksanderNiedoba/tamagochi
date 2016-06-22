@@ -31,7 +31,7 @@ void Draw::drawTamagochi(std::string fileName)
     Reader.close ();                           //Close file
 }
 
-std::string Draw::getFileContents (std::ifstream& File)
+std::string Draw::getFileContents(std::ifstream& File)
 {
     std::string Lines = "";        //All lines
 

@@ -49,7 +49,7 @@ void Game::update()
 
 }
 
-void Game::render()
+void Game::render() // render jest kurwa nieczytelny!!!
 {
     if (system("CLS")) system("clear");
     TamagochiDrawTypes tdt;
@@ -57,9 +57,8 @@ void Game::render()
     Draw d;
     d.drawTamagochi(fileName);
     RenderBars rb;
-    std::vector<std::string> needsNames = needs_container.getNeedsNames();
-    rb.renderAll(needsNames);
-
+    std::vector<Need> needs = needs_container.get_needs();
+    rb.renderAll(needs);
 }
 
 

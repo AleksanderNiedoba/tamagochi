@@ -21,7 +21,7 @@ class Needs_container
     protected:
 
     private:
-        const double NEED_LVL_CHANGE = -0.001;
+        const double NEED_LVL_CHANGE = -0.1;
     vector<Need> needs;
 
 };
