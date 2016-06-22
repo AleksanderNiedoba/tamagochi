@@ -52,18 +52,19 @@
 	"asserts/itemAsserts.cpp"
 	"RenderBars.h"
 
-1466619930 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\need.h
+1466622361 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\need.h
 	<string>
 
 1465508582 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\food_need.h
 	<Need.h>
 
-1466593420 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\tamagochi.h
+1466623993 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\tamagochi.h
 	<string>
 	<vector>
 	"Need.h"
+	"Needs_container.h"
 
-1466620632 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\needs_container.h
+1466624276 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\needs_container.h
 	<vector>
 	<string>
 
@@ -80,17 +81,17 @@
 	"Need.h"
 	<iostream>
 
-1466616764 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\needs_container.cpp
+1466624820 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\needs_container.cpp
 	"Needs_container.h"
 	"Need.h"
 	<iostream>
 
-1466601365 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\tamagochi.cpp
+1466624756 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\tamagochi.cpp
 	"Tamagochi.h"
 	<iostream>
 	<string>
 
-1466619495 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\game.cpp
+1466624028 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\game.cpp
 	<iostream>
 	<string>
 	<windows.h>
@@ -106,7 +107,7 @@
 	"ItemContainer.h"
 	<stdlib.h>
 
-1466615029 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\gameloop.cpp
+1466624756 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\gameloop.cpp
 	<iostream>
 	<assert.h>
 	"Need.h"
@@ -153,7 +154,7 @@
 	<assert.h>
 	<vector>
 
-1466610154 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\tamagochidrawtypes.cpp
+1466623046 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\tamagochidrawtypes.cpp
 	"TamagochiDrawTypes.h"
 
 1466610154 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\tamagochidrawtypes.h

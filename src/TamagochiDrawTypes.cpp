@@ -7,8 +7,9 @@ TamagochiDrawTypes::TamagochiDrawTypes()
     moodToFileName["life is beautiful"]     =  "good.txt";
     moodToFileName["I'm happy"]             =  "normal.txt";
     moodToFileName["life sucks"]            =  "normal.txt";
-    moodToFileName["Don't forget about me"] =  "bad.txt";
-    moodToFileName["I'm dying"]             =  "bad.txt";
+    moodToFileName["Don't forget about me"] =  "sad.txt";
+    moodToFileName["I'm dying"]             =  "sad.txt";
+    moodToFileName["dead"]                  =  "gameOver.txt";
 }
 
 TamagochiDrawTypes::~TamagochiDrawTypes()

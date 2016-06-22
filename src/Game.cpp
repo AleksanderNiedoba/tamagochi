@@ -35,6 +35,9 @@ bool Game::init()
 
 bool Game::endGame()
 {
+    if (tamagochi.is_dead(needs_container))
+        return true;
+
     return false;
 }
 

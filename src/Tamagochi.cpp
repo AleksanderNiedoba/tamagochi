@@ -29,9 +29,11 @@ void Tamagochi::demand(Need need)
     std::cout<<" is not satisfied"<<std::endl;
 }
 
-bool Tamagochi::is_dead()
+bool Tamagochi::is_dead(Needs_container &needs_container)
 {
-    //when food is zero or health is zero
+    Need food_need = needs_container.find("food");
+    if( food_need.get_need_lvl() < 1)
+        return true;
     return false;
 }
 
@@ -62,8 +64,12 @@ void Tamagochi::set_mood(const double happiness_lvl)
     {
         mood = "Don't forget about me";
     }
-    else
+    else if( happiness_lvl >= 1)
     {
         mood = "I'm dying";
+    }
+    else
+    {
+        mood = "dead";
     }
 }
