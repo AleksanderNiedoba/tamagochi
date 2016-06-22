@@ -1,6 +1,7 @@
 #include "ItemContainer.h"
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 ItemContainer::ItemContainer()
@@ -12,26 +13,23 @@ ItemContainer::~ItemContainer()
 {
     //dtor
 }
-
-vector<Item> ItemContainer::getItems()
+//operator<(const a, const b){ return a > b}
+vector<Item>& ItemContainer::getItems() //it's still not return by reference!
 {
     return itemContainer;
 }
 
-void ItemContainer::useItem(string itemName, Need &need)
+void ItemContainer::useItem(string itemName, Need &need) // format to get rid of break
 {
     for(vector<Item>::iterator it = itemContainer.begin(); it != itemContainer.end(); ++it)
     {
-        cout<<(*it).getName()<<endl;
-        cout<<itemName<<endl;
         if( (*it).getName() == itemName )
         {
             (*it).use(need);
+            itemContainer.erase(it);
+            break;
         }
-        itemContainer.erase(it);
-        delete &(*it);
     }
-    cout<<"TY CIULU"<<endl;
 }
 
 void ItemContainer::addItem(Item &item)

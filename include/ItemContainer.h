@@ -11,7 +11,7 @@ class ItemContainer
     public:
         ItemContainer();
         virtual ~ItemContainer();
-        vector<Item > getItems();
+        vector<Item >& getItems();
         void useItem(string itemName, Need &need);
         void addItem(Item &item);
     protected:

@@ -30,16 +30,15 @@ void itemAsserts()
     //stworz potrzebe jedzenia
     Need food_need("food", 12);
     //zjedz i sprawdz >100
-    vector<Item> itemCont = itemContainer.getItems();
 
 
     itemContainer.useItem("jablko", food_need);
-    cout<<"TY HUJU"<<endl;
     assert(food_need.get_need_lvl()<=100);
     //sprawdz, czy japko zostalo usuniete z itemcontainer
-
-    for(auto &item: itemCont)
+    vector<Item> itemContVec = itemContainer.getItems();
+    for(auto &item: itemContVec)
     {
+        cout<<item.getName()<<endl;
         assert(item.getName() != "jablko");
     }
     //odejmij 50
