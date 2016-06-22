@@ -58,3 +58,16 @@ const int Need::getMaxNeedLvl()
     return MAX_NEED_LVL;
 }
 
+void Need::setNeedLvl(double amount)
+{
+    need_lvl=amount;
+}
+
+void Need::saveState(std::ofstream& myfile)
+{
+    myfile<<need_lvl<<std::endl;
+    myfile<<type<<std::endl;
+    myfile<<happiness_weight<<std::endl;
+}
+
+

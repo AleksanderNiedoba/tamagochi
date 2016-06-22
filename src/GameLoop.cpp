@@ -36,7 +36,7 @@ void Game::run()
                 lag -= timestep;
 
                 //previous_state = current_state;
-
+                save();
                 update(); // update at a fixed rate each time
                 render();
             }

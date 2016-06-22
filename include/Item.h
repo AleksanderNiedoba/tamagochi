@@ -12,6 +12,7 @@ class Item
         void use(Need &need);
         void buy();
         std::string getName();
+        void saveState(std::ofstream& myfile);
 
     protected:
 

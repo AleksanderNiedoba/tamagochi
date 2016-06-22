@@ -1,9 +1,10 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 #include <windows.h>
 #include "Need.h"
 #include "Tamagochi.h"
-#include "Needs_container.h"
+
 #include "TamagochiDrawTypes.h"
 #include "Game.h"
 #include "Draw.h"
@@ -68,6 +69,29 @@ void Game::render() // render jest kurwa nieczytelny!!!
     RenderBars rb;
     std::vector<Need> needs = needs_container.get_needs();
     rb.renderAll(needs);
+}
+
+void Game::save()
+{
+    ofstream myfile;
+    myfile.open ("gameState.txt");
+    needs_container.saveState(myfile);
+    itemContainer.saveState(myfile);
+
+
+    myfile.close();
+
+}
+
+void Game::load()
+{
+    ifstream myfile;
+    myfile.open ("gameState.txt");
+    needs_container.loadState(this, myfile);
+    itemContainer.loadState(this, myfile);
+
+
+    myfile.close();
 }
 
 

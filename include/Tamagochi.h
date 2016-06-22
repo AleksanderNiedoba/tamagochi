@@ -15,6 +15,7 @@ class Tamagochi
         void check_needs(std::vector<Need> needs);
         const std::string get_mood() const;
 
+
     protected:
 
     private:

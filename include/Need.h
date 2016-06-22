@@ -1,6 +1,8 @@
 #ifndef NEED_H
 #define NEED_H
 #include <string>
+#include <iostream>
+#include <fstream>
 
 
 class Need
@@ -13,6 +15,8 @@ public:
     double get_need_lvl() const;
     const double get_happiness_weight() const;
     void change_need_lvl(double amount);
+    void setNeedLvl(double);
+    void saveState(std::ofstream& myfile);
     const int getMaxNeedLvl();
 protected:
     double need_lvl;

@@ -3,6 +3,7 @@
 #include <iostream>
 
 
+
 Needs_container::Needs_container()
 {
     //ctor
@@ -78,3 +79,35 @@ Need Needs_container::find(std::string name) // what if there is no such need?
             return need;
     }
 }
+
+
+void Needs_container::saveState(ofstream& myfile)
+{
+    myfile<<needs.size()<<std::endl;
+    for(auto &need: needs)
+    {
+        need.saveState(myfile);
+    }
+}
+
+void Needs_container::loadState(Game& game, ifstream& myfile)
+{
+    std::string TempLine;
+    std::getline (File, TempLine);
+    int vectorSize= int(TempLine)
+    for(int i=0;i<=vectorSize;i++)
+    {
+        std::getline (File, TempLine);
+        double needLvl=(double)TempLine;
+        std::getline (File, TempLine);
+        std::string type=TempLine;
+        std::getline (File, TempLine);
+        double happines_weight=(int)TempLine;
+        Need need(type, happines_weight);
+        need.setNeedLvl(needLvl);
+        game.needs_container.add_need(need);
+    }
+}
+
+
+

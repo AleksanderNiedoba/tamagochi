@@ -2,9 +2,12 @@
 #define NEEDS_CONTAINER_H
 #include <vector>
 #include <string>
+#include <fstream>
+#include "Game.h"
 
 using namespace std;
 
+class Game;
 class Need;
 
 class Needs_container
@@ -16,6 +19,8 @@ class Needs_container
     void add_need(Need need);
     Need getNeedOfType(string type);
     vector<Need>& get_needs();
+    void saveState(ofstream& myfile);
+    void loadState(Game& game, ifstream& myfile);
     void update_needs();
     Need find(std::string);
     std::vector<std::string> getNeedsNames();

@@ -22,3 +22,11 @@ std::string Item::getName()
 {
     return name;
 }
+
+void Item::saveState(std::ofstream& myfile)
+{
+   myfile<<satisfyValue<<std::endl;
+   myfile<<name<<std::endl;
+   myfile<<price<<std::endl;
+}
+

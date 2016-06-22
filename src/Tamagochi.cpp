@@ -73,3 +73,6 @@ void Tamagochi::set_mood(const double happiness_lvl)
         mood = "dead";
     }
 }
+
+
+
