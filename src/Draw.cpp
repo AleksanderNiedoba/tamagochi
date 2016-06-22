@@ -52,3 +52,5 @@ std::string Draw::getFileContents (std::ifstream& File)
         return "ERROR cannot load tamagotchi art";
     }
 }
+
+

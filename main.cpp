@@ -6,6 +6,7 @@
 #include "Game.h"
 #include "ItemContainer.h"
 #include "asserts/itemAsserts.cpp"
+#include "RenderBars.h"
 
 
 using namespace std;

@@ -42,6 +42,7 @@
 		<Unit filename="include/ItemContainer.h" />
 		<Unit filename="include/Need.h" />
 		<Unit filename="include/Needs_container.h" />
+		<Unit filename="include/RenderBars.h" />
 		<Unit filename="include/Tamagochi.h" />
 		<Unit filename="include/TamagochiDrawTypes.h" />
 		<Unit filename="main.cpp" />
@@ -52,6 +53,7 @@
 		<Unit filename="src/ItemContainer.cpp" />
 		<Unit filename="src/Need.cpp" />
 		<Unit filename="src/Needs_container.cpp" />
+		<Unit filename="src/RenderBars.cpp" />
 		<Unit filename="src/Tamagochi.cpp" />
 		<Unit filename="src/TamagochiDrawTypes.cpp" />
 		<Extensions>

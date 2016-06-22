@@ -4,6 +4,9 @@
 #include <fstream>
 #include <string>
 
+
+
+
 class Draw
 {
     public:
@@ -15,7 +18,9 @@ class Draw
     protected:
 
     private:
+
         const std::string basePath = "TamagotchiAscii/";
+
 };
 
 #endif // DRAW_H

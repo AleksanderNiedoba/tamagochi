@@ -7,6 +7,7 @@
 #include "TamagochiDrawTypes.h"
 #include "Game.h"
 #include "Draw.h"
+#include "RenderBars.h"
 
 
 using namespace std;
@@ -50,12 +51,14 @@ void Game::update()
 
 void Game::render()
 {
-
+    if (system("CLS")) system("clear");
     TamagochiDrawTypes tdt;
     std::string fileName = tdt.getFileName(tamagochi);
     Draw d;
     d.drawTamagochi(fileName);
-    if (system("CLS")) system("clear");
+    RenderBars rb;
+    rb.renderAll();
+
 }
 
 

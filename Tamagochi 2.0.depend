@@ -41,7 +41,7 @@
 1465508582 c:\users\olek\desktop\programowanie ii\projekt i sem\tamgochi 2.0\tamagochi 2.0\include\entertainment_need.h
 	<Need.h>
 
-1466593420 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\main.cpp
+1466614228 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\main.cpp
 	<iostream>
 	<assert.h>
 	"Need.h"
@@ -50,6 +50,7 @@
 	"Game.h"
 	"ItemContainer.h"
 	"asserts/itemAsserts.cpp"
+	"RenderBars.h"
 
 1466593420 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\need.h
 	<string>
@@ -89,7 +90,7 @@
 	<iostream>
 	<string>
 
-1466610197 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\game.cpp
+1466614963 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\game.cpp
 	<iostream>
 	<string>
 	<windows.h>
@@ -99,12 +100,13 @@
 	"TamagochiDrawTypes.h"
 	"Game.h"
 	"Draw.h"
+	"RenderBars.h"
 
 1466609994 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\game.h
 	"ItemContainer.h"
 	<stdlib.h>
 
-1466609619 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\gameloop.cpp
+1466610497 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\gameloop.cpp
 	<iostream>
 	<assert.h>
 	"Need.h"
@@ -159,15 +161,22 @@
 	<string>
 	"Tamagochi.h"
 
-1466609550 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\draw.cpp
+1466612034 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\draw.cpp
 	"Draw.h"
 	<windows.h>
 	<string>
 	<iostream>
 	<assert.h>
 
-1466609550 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\draw.h
+1466612053 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\draw.h
 	<iostream>
 	<fstream>
 	<string>
+
+1466614228 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\renderbars.h
+	<windows.h>
+
+1466614351 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\renderbars.cpp
+	"RenderBars.h"
+	<iostream>
 
