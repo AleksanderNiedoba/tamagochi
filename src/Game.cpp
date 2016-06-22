@@ -22,6 +22,10 @@ Game::~Game()
     //dtor
 }
 
+void Game::clearConsole()
+{
+    if (system("CLS")) system("clear");
+}
 
 
 bool Game::init()
@@ -36,7 +40,10 @@ bool Game::init()
 bool Game::endGame()
 {
     if (tamagochi.is_dead(needs_container))
+    {
+       // clearConsole();//temporary
         return true;
+    }
 
     return false;
 }
@@ -49,12 +56,11 @@ void Game::update()
 
    vector<Need> needs = needs_container.get_needs();
    tamagochi.check_needs(needs);
-
 }
 
 void Game::render() // render jest kurwa nieczytelny!!!
 {
-    if (system("CLS")) system("clear");
+    clearConsole();
     TamagochiDrawTypes tdt;
     std::string fileName = tdt.getFileName(tamagochi);
     Draw d;

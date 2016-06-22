@@ -1,5 +1,6 @@
 #include <iostream>
 #include <assert.h>
+#include <stdio.h>
 #include "Need.h"
 #include "Tamagochi.h"
 #include "Needs_container.h"
@@ -41,10 +42,6 @@ void Game::run()
             }
 
             // calculate how close or far we are from the next timestep
-
-
-
         }
-
-
+        getchar();
     }

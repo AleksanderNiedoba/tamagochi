@@ -64,7 +64,7 @@
 	"Need.h"
 	"Needs_container.h"
 
-1466624276 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\needs_container.h
+1466625351 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\needs_container.h
 	<vector>
 	<string>
 
@@ -86,12 +86,12 @@
 	"Need.h"
 	<iostream>
 
-1466624756 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\tamagochi.cpp
+1466625167 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\tamagochi.cpp
 	"Tamagochi.h"
 	<iostream>
 	<string>
 
-1466624028 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\game.cpp
+1466625343 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\game.cpp
 	<iostream>
 	<string>
 	<windows.h>
@@ -103,13 +103,14 @@
 	"Draw.h"
 	"RenderBars.h"
 
-1466609994 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\game.h
+1466625186 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\game.h
 	"ItemContainer.h"
 	<stdlib.h>
 
-1466624756 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\gameloop.cpp
+1466625471 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\gameloop.cpp
 	<iostream>
 	<assert.h>
+	<stdio.h>
 	"Need.h"
 	"Tamagochi.h"
 	"Needs_container.h"
@@ -154,7 +155,7 @@
 	<assert.h>
 	<vector>
 
-1466623046 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\tamagochidrawtypes.cpp
+1466624825 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\tamagochidrawtypes.cpp
 	"TamagochiDrawTypes.h"
 
 1466610154 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\tamagochidrawtypes.h

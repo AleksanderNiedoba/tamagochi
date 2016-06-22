@@ -22,6 +22,7 @@ class Game
         ItemContainer itemContainer;
         Tamagochi tamagochi;
         bool endGame();
+        void clearConsole();
 };
 
 #endif // GAME_H
