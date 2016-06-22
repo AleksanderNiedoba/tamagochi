@@ -36,13 +36,16 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="asserts/itemAsserts.cpp" />
+		<Unit filename="include/Draw.h" />
 		<Unit filename="include/Game.h" />
 		<Unit filename="include/Item.h" />
 		<Unit filename="include/ItemContainer.h" />
 		<Unit filename="include/Need.h" />
 		<Unit filename="include/Needs_container.h" />
 		<Unit filename="include/Tamagochi.h" />
+		<Unit filename="include/TamagochiDrawTypes.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Draw.cpp" />
 		<Unit filename="src/Game.cpp" />
 		<Unit filename="src/GameLoop.cpp" />
 		<Unit filename="src/Item.cpp" />
@@ -50,6 +53,7 @@
 		<Unit filename="src/Need.cpp" />
 		<Unit filename="src/Needs_container.cpp" />
 		<Unit filename="src/Tamagochi.cpp" />
+		<Unit filename="src/TamagochiDrawTypes.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

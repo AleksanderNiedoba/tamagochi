@@ -1,6 +1,7 @@
 #ifndef GAME_H
 #define GAME_H
 #include "ItemContainer.h"
+#include <stdlib.h>
 
 class Game
 {
@@ -8,9 +9,11 @@ class Game
         bool init();
         void run();
         void draw();
+        void render();
         void update();
         Game();
         virtual ~Game();
+
 
     protected:
 

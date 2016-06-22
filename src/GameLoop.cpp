@@ -35,13 +35,15 @@ void Game::run()
                 lag -= timestep;
 
                 //previous_state = current_state;
+
                 update(); // update at a fixed rate each time
+                render();
             }
 
             // calculate how close or far we are from the next timestep
 
 
-            //render();
+
         }
 
 

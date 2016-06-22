@@ -1,10 +1,13 @@
 #include <iostream>
 #include <string>
+#include <windows.h>
 #include "Need.h"
 #include "Tamagochi.h"
 #include "Needs_container.h"
-//#include "ItemContainer.h"
+#include "TamagochiDrawTypes.h"
 #include "Game.h"
+#include "Draw.h"
+
 
 using namespace std;
 
@@ -43,5 +46,16 @@ void Game::update()
    vector<Need> needs = needs_container.get_needs();
    tamagochi.check_needs(needs);
 
-   cout<<tamagochi.get_mood()<<endl;
 }
+
+void Game::render()
+{
+
+    TamagochiDrawTypes tdt;
+    std::string fileName = tdt.getFileName(tamagochi);
+    Draw d;
+    d.drawTamagochi(fileName);
+    if (system("CLS")) system("clear");
+}
+
+
