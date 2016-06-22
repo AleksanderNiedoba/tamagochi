@@ -52,3 +52,13 @@ Need Needs_container::getNeedOfType(string type)
         }
     }
 }
+
+std::vector<std::string> Needs_container::getNeedsNames()
+{
+    std::vector<std::string>needsNames;
+    for(auto &need: needs)
+    {
+        needsNames.push_back(need.get_type());
+    }
+    return needsNames;
+}

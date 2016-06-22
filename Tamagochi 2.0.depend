@@ -63,7 +63,7 @@
 	<vector>
 	"Need.h"
 
-1466593420 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\needs_container.h
+1466616764 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\needs_container.h
 	<vector>
 	<string>
 
@@ -80,7 +80,7 @@
 	"Need.h"
 	<iostream>
 
-1466593420 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\needs_container.cpp
+1466616764 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\needs_container.cpp
 	"Needs_container.h"
 	"Need.h"
 	<iostream>
@@ -90,7 +90,7 @@
 	<iostream>
 	<string>
 
-1466614963 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\game.cpp
+1466616839 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\game.cpp
 	<iostream>
 	<string>
 	<windows.h>
@@ -106,7 +106,7 @@
 	"ItemContainer.h"
 	<stdlib.h>
 
-1466610497 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\gameloop.cpp
+1466615029 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\gameloop.cpp
 	<iostream>
 	<assert.h>
 	"Need.h"
@@ -119,7 +119,7 @@
 	"Need.h"
 	"assert.h"
 
-1466593420 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\itemcontainer.h
+1466616144 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\itemcontainer.h
 	<string>
 	<vector>
 	"Item.h"
@@ -173,10 +173,12 @@
 	<fstream>
 	<string>
 
-1466614228 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\renderbars.h
+1466617737 c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\include\renderbars.h
 	<windows.h>
+	<vector>
+	<string>
 
-1466614351 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\renderbars.cpp
+1466615275 source:c:\users\olek\desktop\programowanie ii\projekt i sem\tamagochi\src\renderbars.cpp
 	"RenderBars.h"
 	<iostream>
 

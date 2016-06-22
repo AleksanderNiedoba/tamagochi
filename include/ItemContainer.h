@@ -14,6 +14,7 @@ class ItemContainer
         vector<Item >& getItems();
         void useItem(string itemName, Need &need);
         void addItem(Item &item);
+
     protected:
 
     private:

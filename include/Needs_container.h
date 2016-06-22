@@ -17,6 +17,7 @@ class Needs_container
     Need getNeedOfType(string type);
     vector<Need>& get_needs();
     void update_needs();
+    std::vector<std::string> getNeedsNames();
     protected:
 
     private:

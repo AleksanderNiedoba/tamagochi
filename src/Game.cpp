@@ -57,7 +57,8 @@ void Game::render()
     Draw d;
     d.drawTamagochi(fileName);
     RenderBars rb;
-    rb.renderAll();
+    std::vector<std::string> needsNames = needs_container.getNeedsNames();
+    rb.renderAll(needsNames);
 
 }
 

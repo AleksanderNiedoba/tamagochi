@@ -26,21 +26,31 @@ void RenderBars::drawBar(char x, char y, const int colorNumber, int coloredChars
     int squaresDrawn = 0;
     while(squaresDrawn < BAR_SQUARES_WIDTH)
     {
-        if(squaresDrawn + coloredCharsNum < BAR_SQUARES_WIDTH)
-        {
+        if(squaresDrawn + coloredCharsNum == BAR_SQUARES_WIDTH)
             SetConsoleTextAttribute(h, colorNumber);
-        }
+
         std::cout<<barElement;
         squaresDrawn++;
     }
-
+    SetConsoleTextAttribute(h, greyNumber);
 }
 
-void RenderBars::renderAll() //uzaleznij od szerokosci tamagochuja
+void RenderBars::renderAll(std::vector<std::string> needsNames) //uzaleznij od szerokosci tamagochuja
 {
-    int x=50;
-    int y=15;
-    drawBar(x,y,blueNumber,BAR_SQUARES_WIDTH);
+    int barY = START_BARS_Y;
+    for(auto &needName: needsNames)
+    {
+        renderName(START_BARS_X, barY, needName);
+        barY += NAME_Y_DIFFERENCE;
+        drawBar(START_BARS_X ,barY ,blueNumber,BAR_SQUARES_WIDTH-10);
+        barY += BAR_Y_DIFFERENCE;
+
+    }
 }
 
+void RenderBars::renderName(char x, char y, std::string name)
+{
+    setCursorPosition(x, y);
+    std::cout<<name;
+}
 
