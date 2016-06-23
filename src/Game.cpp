@@ -53,7 +53,7 @@ void Game::update()
    needs_container.update_needs();
    double happiness_lvl = needs_container.get_happiness_lvl();
    tamagochi.set_mood(happiness_lvl);
-
+   tamagochi.addMoney(happiness_lvl);
    vector<Need> needs = needs_container.get_needs();
    tamagochi.check_needs(needs);
 }
@@ -61,6 +61,7 @@ void Game::update()
 void Game::render() // render jest kurwa nieczytelny!!!
 {
     clearConsole();
+    cout<<tamagochi.getMoney()<<endl;
     TamagochiDrawTypes tdt;
     std::string fileName = tdt.getFileName(tamagochi);
     Draw d;

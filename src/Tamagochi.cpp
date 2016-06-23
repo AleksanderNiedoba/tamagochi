@@ -1,10 +1,12 @@
 #include "Tamagochi.h"
 #include <iostream>
 #include <string>
+#include <time.h>
+#include <cstdlib>
 
 Tamagochi::Tamagochi()
 {
-    //ctor
+    srand(time(NULL));
 }
 
 Tamagochi::~Tamagochi()
@@ -72,4 +74,15 @@ void Tamagochi::set_mood(const double happiness_lvl)
     {
         mood = "dead";
     }
+}
+
+void Tamagochi::addMoney(const double happiness_lvl)
+{
+    float randomFactor = ((rand()%RAND_MAX)*0.4)+0.8;
+    money += happiness_lvl*(randomFactor * happinesToMoney);
+}
+
+int Tamagochi::getMoney()
+{
+    return money;
 }
